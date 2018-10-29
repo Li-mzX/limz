@@ -5,45 +5,45 @@ import java.util.Map;
 
 /**
   * @ClassName: Row
-  * @Description: ±í¸ñÔªËØ£¬ ÓÃÀ´³éÈ¡PDF
+  * @Description: ï¿½ï¿½ï¿½Ôªï¿½Ø£ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡PDF
   * @author Limz
-  * @date 2017-9-14 ÉÏÎç10:03:50
+  * @date 2017-9-14 ï¿½ï¿½ï¿½ï¿½10:03:50
   *
  */
 public class Row{
 
     /**
-     * ÓÎ±ê
+     * ï¿½Î±ï¿½
      */
     private int cursor = 1;
     /**
-     * ÐòÁÐºÅ£¨ÔÚ±í¸ñÖÐµÄÎ»ÖÃ£©
+     * ï¿½ï¿½ï¿½ÐºÅ£ï¿½ï¿½Ú±ï¿½ï¿½ï¿½Ðµï¿½Î»ï¿½Ã£ï¿½
      */
     private int index;
     /**
-     * ×î¸ßµã×ø±ê
+     * ï¿½ï¿½ßµï¿½ï¿½ï¿½ï¿½ï¿½
      */
     private float top;
     /**
-     * ×îµÍµã×ø±ê
+     * ï¿½ï¿½Íµï¿½ï¿½ï¿½ï¿½ï¿½
      */
     private float bottom;
     /**
-     * µ¥Ôª¸ñ¼¯ºÏ
+     * ï¿½ï¿½Ôªï¿½ñ¼¯ºï¿½
      */
     private Map<Integer,Cell> cells = new HashMap<Integer, Cell>();
     /**
-     * ³¤¶È
+     * ï¿½ï¿½ï¿½ï¿½
      */
     private int cSize = 0;
     /**
-     * ËùÔÚµÄ±í¸ñ
+     * ï¿½ï¿½ï¿½ÚµÄ±ï¿½ï¿½
      */
     private Table table;
     
     /**
-      * buildCell ´´½¨Ò»¸öÐÂµÄµ¥Ôª¸ñ
-      * @param ³õÊ¼ x ×ø±ê
+      * buildCell ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ÂµÄµï¿½Ôªï¿½ï¿½
+      * @param ï¿½ï¿½Ê¼ x ï¿½ï¿½ï¿½ï¿½
       * @return
       * @author Limz
      */
@@ -71,7 +71,7 @@ public class Row{
     }
     
     /**
-      * ´´½¨Ò»¸öÐÂµÄÊµÀý Row. 
+      * ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Âµï¿½Êµï¿½ï¿½ Row. 
       * <p>Description: </p>
       * @param y
       * @param table
@@ -85,7 +85,7 @@ public class Row{
     }
     /**
       * getPreRow
-      * @return ÉÏÒ»ÐÐ£¨Èç¹û´æÔÚ£©
+      * @return ï¿½ï¿½Ò»ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½
       * @author Limz
      */
     public Row getPreRow(){
@@ -98,8 +98,8 @@ public class Row{
     }
     
     /**
-      * µ÷ÕûÐÐµÄ¸ß¶È
-      * @param ÐÂµÄ y ×ø±ê
+      * ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ¸ß¶ï¿½
+      * @param ï¿½Âµï¿½ y ï¿½ï¿½ï¿½ï¿½
       * @author Limz
      */
     public void adjust(float y){
@@ -114,43 +114,43 @@ public class Row{
     }
     
     /**
-     * @return ×î¸ßµã×ø±ê
+     * @return ï¿½ï¿½ßµï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public float getTop() {
         return top;
     }
     
     /**
-     * @return ×îµÍµã×ø±ê
+     * @return ï¿½ï¿½Íµï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public float getBottom() {
         return bottom;
     }
     
     /**
-     * @return µ¥Ôª¸ñ¼¯ºÏ
+     * @return ï¿½ï¿½Ôªï¿½ñ¼¯ºï¿½
      */
     public Map<Integer, Cell> getCells() {
         return cells;
     }
     
     /**
-     * @return µ¥Ôª¸ñ
-     * @param µ¥Ôª¸ñÐòÁÐºÅ 1~csize
+     * @return ï¿½ï¿½Ôªï¿½ï¿½
+     * @param ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½ï¿½Ðºï¿½ 1~csize
      */
     public Cell getCell(Integer index) {
         return cells.get(index);
     }
 
     /**
-     * @return ³¤¶È
+     * @return ï¿½ï¿½ï¿½ï¿½
      */
     public int getCSize() {
         return cSize;
     }
 
     /**
-     * @return ËùÊô±í¸ñ
+     * @return ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public Table getTable() {
         return table;
@@ -166,7 +166,7 @@ public class Row{
     }
 
     /**
-      * ¸üÐÂÐòÁÐºÅºÍËùÊô±í¸ñ
+      * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐºÅºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
       * @param cursor
       * @param table
       * @author Limz
@@ -177,7 +177,7 @@ public class Row{
     }
     
     /**
-      * ÔÚÖ¸¶¨Î»ÖÃÌí¼ÓÒ»¸ö¿Õ°×µ¥Ôª¸ñ
+      * ï¿½ï¿½Ö¸ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Õ°×µï¿½Ôªï¿½ï¿½
       * @param index
       * @author Limz
      */
@@ -193,7 +193,7 @@ public class Row{
     }
     
     /**
-     * ´ÓÖ¸¶¨Î»ÖÃÒÆ³ýÒ»¸ñ
+     * ï¿½ï¿½Ö¸ï¿½ï¿½Î»ï¿½ï¿½ï¿½Æ³ï¿½Ò»ï¿½ï¿½
      * @param index
      * @author Limz
     */

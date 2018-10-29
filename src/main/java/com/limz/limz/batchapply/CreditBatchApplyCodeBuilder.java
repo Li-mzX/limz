@@ -29,14 +29,14 @@ import javabean.newcredit.creditdreport.util.StringUtil;
 
 /**
  * @ClassName: CreditBatchApplyCodeBuilder
- * @Description: ÅúÁ¿×ÊÐÅÉêÇë »ñÈ¡´úÂë²ÎÊý¹¤¾ßÀà
+ * @Description: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * @author Limz
- * @date 2017-10-26 ÉÏÎç10:23:54
+ * @date 2017-10-26 ï¿½ï¿½ï¿½ï¿½10:23:54
  */
 public class CreditBatchApplyCodeBuilder {
 
     private CodeBuilder codebuilder;
-    //¹úÄÚÇþµÀÒµÎñ
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½
     private CreditChannelDao creditChannelDao;
 
     private SetChannelDao setchanneldao;
@@ -66,7 +66,7 @@ public class CreditBatchApplyCodeBuilder {
     }
 
     /**
-     * Ïß³Ì»Ø¹öÊ±µ÷ÓÃ£¬½«²»ÓÃµÄ´úÂë·µ»Ø¶ÓÁÐÏÂ´ÎÊ¹ÓÃ
+     * ï¿½ß³Ì»Ø¹ï¿½Ê±ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÃµÄ´ï¿½ï¿½ë·µï¿½Ø¶ï¿½ï¿½ï¿½ï¿½Â´ï¿½Ê¹ï¿½ï¿½
      * 
      * @param param
      * @author Limz
@@ -86,10 +86,10 @@ public class CreditBatchApplyCodeBuilder {
     private Map<String, String> prefixMap = new HashMap<String, String>();
 
     /**
-     * »ñÈ¡×ÊÐÅÉêÇë²ÎÊý
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      * 
      * @param countryCode
-     * @return ²ÎÊý¶ÔÏó
+     * @return ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      * @throws CreditBatchApplyException
      * @author Limz
      */
@@ -110,7 +110,7 @@ public class CreditBatchApplyCodeBuilder {
         String orderCode;
         String applyCode;
         if ("NULL".equals(propertySerialNo)) {
-            throw new CreditBatchApplyException("¹ú±ð£º" + countryCode + " ÇþµÀ»ñÈ¡Ê§°Ü£¡");
+            throw new CreditBatchApplyException("ï¿½ï¿½ï¿½ï¿½" + countryCode + " ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡Ê§ï¿½Ü£ï¿½");
         }
         try {
             String prefixCode = prefixMap.get(countryCode);
@@ -127,7 +127,7 @@ public class CreditBatchApplyCodeBuilder {
             }
         } catch (Exception e) {
             e.printStackTrace();
-            throw new CreditBatchApplyException("Î¯ÍÐµ¥ºÅ»ñÈ¡Ê§°Ü£¡" + e.getMessage());
+            throw new CreditBatchApplyException("Î¯ï¿½Ðµï¿½ï¿½Å»ï¿½È¡Ê§ï¿½Ü£ï¿½" + e.getMessage());
         }
         try {
 
@@ -137,7 +137,7 @@ public class CreditBatchApplyCodeBuilder {
             }
         } catch (Exception e) {
             e.printStackTrace();
-            throw new CreditBatchApplyException("×ÊÐÅÉêÇëºÅ»ñÈ¡Ê§°Ü£¡" + e.getMessage());
+            throw new CreditBatchApplyException("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å»ï¿½È¡Ê§ï¿½Ü£ï¿½" + e.getMessage());
         }
         Date srDate = null;
         try {
@@ -156,10 +156,10 @@ public class CreditBatchApplyCodeBuilder {
     private Map<String, Date> endDates = new HashMap<String, Date>();
 
     /**
-     * »ñÈ¡Ó¦ÊÕµ½ÈÕÆÚ
+     * ï¿½ï¿½È¡Ó¦ï¿½Õµï¿½ï¿½ï¿½ï¿½ï¿½
      * 
-     * @param ÇþµÀºÅ
-     * @param Âò·½¹ú¼Ò
+     * @param ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     * @param ï¿½ò·½¹ï¿½ï¿½ï¿½
      * @return
      * @throws Exception
      * @author Limz
@@ -173,11 +173,11 @@ public class CreditBatchApplyCodeBuilder {
     }
 
     /**
-     * Ó¦ÊÕµ½ÈÕÆÚ
+     * Ó¦ï¿½Õµï¿½ï¿½ï¿½ï¿½ï¿½
      * 
-     * @param Âò·½¹ú¼Ò
-     * @param ÇþµÀ¹ú¼Ò
-     * @param Ê±ÏÞ
+     * @param ï¿½ò·½¹ï¿½ï¿½ï¿½
+     * @param ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     * @param Ê±ï¿½ï¿½
      * @return
      * @throws Exception
      * @author Limz
@@ -208,11 +208,11 @@ public class CreditBatchApplyCodeBuilder {
     }
 
     /**
-     * »ñÈ¡½Ú¼ÙÈÕÐÅÏ¢
+     * ï¿½ï¿½È¡ï¿½Ú¼ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
      * 
-     * @param Âò·½¹ú¼Ò
-     * @param ÇþµÀ¹ú¼Ò
-     * @param Ô¤ÆÚÌìÊý
+     * @param ï¿½ò·½¹ï¿½ï¿½ï¿½
+     * @param ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     * @param Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      * @return
      * @throws Exception
      * @author Limz
@@ -271,12 +271,12 @@ public class CreditBatchApplyCodeBuilder {
 
     private Map<String, String> chananMap = new HashMap<String, String>();
     /**
-     * Ä¬ÈÏ±¨¸æÀàÐÍ£º±ê×¼±¨¸æ
+     * Ä¬ï¿½Ï±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½×¼ï¿½ï¿½ï¿½ï¿½
      */
     private static final String DEFAULT_REPORTTYPE = "3";
 
     /**
-     * »ñÈ¡Ö¸¶¨¹ú±ð×î¸ßÅä±ÈÇþµÀ
+     * ï¿½ï¿½È¡Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      * 
      * @param countryCode
      * @return propertySerialNo

@@ -8,41 +8,41 @@ import java.util.Map;
 
 /**
   * @ClassName: Table
-  * @Description: ±í¸ñÔªËØ£¬ ÓÃÀ´³éÈ¡PDF
+  * @Description: ï¿½ï¿½ï¿½Ôªï¿½Ø£ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡PDF
   * @author Limz
-  * @date 2017-9-14 ÉÏÎç10:02:54
+  * @date 2017-9-14 ï¿½ï¿½ï¿½ï¿½10:02:54
   *
  */
 public class Table{
 
     /**
-     * ±í¸ñÃû×Ö
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     protected String name;
     /**
-     * ÓÎ±ê
+     * ï¿½Î±ï¿½
      */
     protected int cursor = 1;
     /**
-     * ½á¹û¼¯
+     * ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     private PDFResultMap resultMap;
     /**
-     * ÐÐ¼¯ºÏ
+     * ï¿½Ð¼ï¿½ï¿½ï¿½
      */
     protected Map<Integer, Row> rows = new HashMap<Integer, Row>();
     /**
-     * ÐÐ³¤¶È
+     * ï¿½Ð³ï¿½ï¿½ï¿½
      */
     protected int rSize = 0;
     
     /**
-     * ×Ó±í¸ñ
+     * ï¿½Ó±ï¿½ï¿½
      */
     private Map<String, ChildTable> childs = new HashMap<String, ChildTable>();
 
     /**
-      * ´´½¨Ò»¸öÐÂµÄÊµÀý Table. 
+      * ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Âµï¿½Êµï¿½ï¿½ Table. 
       * <p>Description: </p>
       * @param name
       * @param resultMap
@@ -53,8 +53,8 @@ public class Table{
     }
 
     /**
-      * buildRow ÐÂ½¨Ò»ÐÐ
-      * @param ³õÊ¼ y ×ø±ê
+      * buildRow ï¿½Â½ï¿½Ò»ï¿½ï¿½
+      * @param ï¿½ï¿½Ê¼ y ï¿½ï¿½ï¿½ï¿½
       * @return
       * @author Limz
      */
@@ -67,7 +67,7 @@ public class Table{
     }
     
     /**
-      * ´´½¨Ò»¸ö×Ó±í¸ñ
+      * ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ó±ï¿½ï¿½
       * @param childName
       * @return
       * @author Limz
@@ -79,7 +79,7 @@ public class Table{
     }
 
     /**
-     * »ñÈ¡Ö¸¶¨ÐÐ    1~ rsize
+     * ï¿½ï¿½È¡Ö¸ï¿½ï¿½ï¿½ï¿½    1~ rsize
      * @return the rows
      */
     public Row getRow(Integer index) {
@@ -87,7 +87,7 @@ public class Table{
     }
     
     /**
-     * »ñÈ¡ËùÓÐÐÐ
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      * @return the rows
      */
     public Map<Integer, Row> getRows() {
@@ -95,7 +95,7 @@ public class Table{
     }
 
     /**
-     * »ñÈ¡±í¸ñµÄÐÐÊý
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      * @return the rSize
      */
     public int getRSize() {
@@ -103,7 +103,7 @@ public class Table{
     }
 
     /**
-     * »ñÈ¡±í¸ñÃû×Ö
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      * @return the name
      */
     public String getName() {
@@ -111,7 +111,7 @@ public class Table{
     }
     
     /**
-     *  »ñÈ¡Õû¸ö½á¹û¼¯
+     *  ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      * @return the resultMap
      */
     public PDFResultMap getResultMap() {
@@ -136,7 +136,7 @@ public class Table{
     }
 
     /**
-      * ´ÓÖ¸¶¨Î»ÖÃÒÆ³ýÒ»ÐÐ
+      * ï¿½ï¿½Ö¸ï¿½ï¿½Î»ï¿½ï¿½ï¿½Æ³ï¿½Ò»ï¿½ï¿½
       * @param index
       * @author Limz
      */
@@ -152,7 +152,7 @@ public class Table{
     }
     
     /**
-      * µ÷Õû±í¸ñ
+      * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
       * @author Limz
      */
     public void hackle() {
@@ -170,9 +170,9 @@ public class Table{
             if (begin && preCSize == 0 && cSize == 1) {
                 continue;
             }
-            //ÕâÐÐµÄµÚÒ»¸ñ ±È ¶¥ÐÐµÚÒ»¸ñ¿¿×óÒ»µã£¬ÊÓÎª¶þ¼¶±êÌâ
+            //ï¿½ï¿½ï¿½ÐµÄµï¿½Ò»ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Ðµï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ã£¬ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             if (!begin && nowRow.getCell(1).getLeft() < firstRow.getCell(1).getLeft()-2F) {
-                //½«Ö®ºóµÄrow ·ÅÈëÒ»¸ö×Ó±í¸ñ
+                //ï¿½ï¿½Ö®ï¿½ï¿½ï¿½row ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ó±ï¿½ï¿½
 //                if (nowRow.getCell(1).getValue().length() == 4) {
                     
                     child = buildChildTable(nowRow.toString().replace("*", "").replace("\t", ""));
@@ -184,11 +184,11 @@ public class Table{
                 child.addRow(nowRow);
                 this.removeRow(i);
                 i--;
-                //½«µÚÒ»¸ö³¤¶È´óÓÚ1µÄÐÐ,µ±×ö¶¥ÐÐ(µ¥Ôª¸ñ×îÈ«µÄÒ»ÐÐ)
+                //ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½È´ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½È«ï¿½ï¿½Ò»ï¿½ï¿½)
             }else if (begin && cSize > 1) {
                 firstRow = nowRow;
                 begin = false;
-            //Èç¹û³öÏÖÒ»ÐÐ±È¶¥ÐÐµ¥Ôª¸ñ¶à ²¢ÇÒ¶¥ÐÐµÄÃ¿Ò»¸öµ¥Ôª¸ñ¶¼ÄÜÔÚÕâÐÐÕÒµ½ÓëÖ®¶ÔÆëµÄ£¬ÄÇ¾Í¸ø¶¥ÐÐ²¹Æë¿Õ°×µ¥Ôª¸ñ
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Ð±È¶ï¿½ï¿½Ðµï¿½Ôªï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ò¶ï¿½ï¿½Ðµï¿½Ã¿Ò»ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½Ç¾Í¸ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½Õ°×µï¿½Ôªï¿½ï¿½
             } else if (!begin && cSize > firstRow.getCSize()) {
                 boolean flag1 = false;
                 boolean flag2 = true;
@@ -228,26 +228,26 @@ public class Table{
         preCSize = 0;
         nowRow = null;
         begin = true;
-        // Èç¹ûfirstRow Îª null  ËµÃ÷´Ë±í¸ñËùÓÐÐÐ¶¼Ö»ÓÐÒ»¸ñ£¬²»ÐèÒªÕûÀí
+        // ï¿½ï¿½ï¿½firstRow Îª null  Ëµï¿½ï¿½ï¿½Ë±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½Ö»ï¿½ï¿½Ò»ï¿½ñ£¬²ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½
         if (firstRow != null) {
             for (int i = 1; i < cursor; i++) {
                 nowRow = rows.get(i);
                 cSize = nowRow.getCSize();
                 if (begin) {
                     if (cSize == 1 && (nowRow.getCell(1).getLeft() < firstRow.getCell(1).getLeft() - 3F || nowRow.getCell(1).getLeft() > firstRow.getCell(1).getLeft() + 3F)) {
-                        //TODO: ±êÌâÖ®ºóµÄÒ»Ð©ÂÒÆß°ËÔã¶«Î÷ µÚÒ»¸ö×Ö·ûºÍ¶¥ÐÐµÄµÚÒ»¸ö×Ö·û²»¶ÔÆë
+                        //TODO: ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½Ò»Ð©ï¿½ï¿½ï¿½ß°ï¿½ï¿½ã¶«ï¿½ï¿½ ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½Í¶ï¿½ï¿½ÐµÄµï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                         continue;
                     } else {
-                        //³öÏÖÒ»¸ö£¬ µÚÒ»¸ö×Ö·ûºÍ¶¥ÐÐ¶ÔÆëµÄ  ¾Í°Ñ¶¥ÐÐµ±×öÕâÐÐµÄÉÏÒ»ÐÐ  ¿ªÊ¼ÕûÀí
+                        //ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½Í¶ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½  ï¿½Í°Ñ¶ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½Ò»ï¿½ï¿½  ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
                         preRow = firstRow;
                         begin = false;
                     }
                 }
                 if (!begin) {
-                    //¿ªÊ¼µ÷Õû
+                    //ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
 
-                    //Èç¹ûÕâÐÐµÄµÚÒ»¸öµ¥Ôª¸ñ,ÔÚ ¶¥ÐÐ µÄµÚÒ»¸öµ¥Ôª¸ñÖ®ºó
-                    //²¢ÇÒÕâÐÐµÄËùÓÐµ¥Ôª¸ñ¶¼ÄÜÔÚ ÉÏÒ»ÐÐ ÕÒµ½Ò»¸öÓëÖ®¶ÔÆëµÄµ¥Ôª¸ñ£¬¾Í°ÑÄÚÈÝ¼ÓÈëÄÇ¸öµ¥Ôª¸ñ
+                    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄµï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½,ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Äµï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½Ö®ï¿½ï¿½
+                    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½Ðµï¿½Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ò»ï¿½ï¿½ ï¿½Òµï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½ï¿½Äµï¿½Ôªï¿½ñ£¬¾Í°ï¿½ï¿½ï¿½ï¿½Ý¼ï¿½ï¿½ï¿½ï¿½Ç¸ï¿½ï¿½ï¿½Ôªï¿½ï¿½
                     if (nowRow.getCell(1).getLeft() > firstRow.getCell(1).getRight()) {
                         boolean flag1 = false;
                         boolean flag2 = true;
@@ -277,12 +277,12 @@ public class Table{
                                     cx.addValue(" " + cy.getValue(), cy.getLeft(), cy.getBottom());
                                 }
                             }
-                            //ÒÆ³ý¸ÃÐÐ
+                            //ï¿½Æ³ï¿½ï¿½ï¿½ï¿½ï¿½
                             this.removeRow(i);
                             i--;
                             continue;
                         }
-                        //Èç¹ûÕâÐÐµÄµÚÒ»¸öµ¥Ôª¸ñºÍ¶¥ÐÐµÄµÚÒ»¸öµ¥Ôª¸ñ¶ÔÆë£¬²¢ÇÒµ¥Ôª¸ñ×ÜÊý±È¶¥ÐÐÉÙ£¬ÄÇ¾ÍÔÚÏàÓ¦µÄÎ»ÖÃ²¹Æë¿Õ°×µ¥Ôª¸ñ
+                        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄµï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½Í¶ï¿½ï¿½ÐµÄµï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½ë£¬ï¿½ï¿½ï¿½Òµï¿½Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¶ï¿½ï¿½ï¿½ï¿½Ù£ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½Î»ï¿½Ã²ï¿½ï¿½ï¿½Õ°×µï¿½Ôªï¿½ï¿½
                     } else if (cSize < firstRow.getCSize() && (nowRow.getCell(1).getLeft() > firstRow.getCell(1).getLeft() - 3F || nowRow.getCell(1).getLeft() < firstRow.getCell(1).getLeft() + 3F)) {
 
                         boolean flag1 = false;
